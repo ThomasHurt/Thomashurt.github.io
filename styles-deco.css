@@ -1,0 +1,121 @@
+/* styles-deco.css */
+
+body {
+  font-family: 'Crimson Text', serif;
+  background-color: #dfdfdf;
+}
+
+header {
+  background-image: url(cb.jpg);
+
+}
+
+footer {
+    background-image: url(cb.jpg);
+    padding: 0.5em;
+}
+
+span.pullquote {
+  font-size: 1.5em;
+  float:right;
+  padding: 0.5em 0.5em 0.5em 1em;
+  display: block;
+  width: 30%;
+}
+
+h1 {
+  font-size: 1.8em;
+  text-align: center;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 2em;
+  font-weight: bold;
+  letter-spacing: -0.8px;
+}
+
+h2 {
+  font-size: 1.2em;
+  text-align: left;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+  margin-top: 1.5em;
+}
+
+#deco1 {
+  height: 20px;
+  margin: 0;
+  background-image: url(images/line2.png);
+}
+
+#deco2 {
+  height: 6px;
+  width: 40%;
+  margin: 1em 30%;
+  background-image: url(images/line3.png);
+}
+
+nav ul li a {
+  background-color: #000;
+  color: #eee;
+  display: block;
+  text-decoration: none;
+  padding-bottom: 5px;
+  transition: 1.5s;
+}
+
+nav ul li a:hover {
+  color: #3096a6;
+}
+
+p.dropped::first-letter {
+  font-size: 4.5em;
+   float: left;
+   line-height: 0.7em;
+}
+
+span.first-phrase {
+  font-variant: small-caps;
+  font-size: 1.25em;
+}
+
+p {
+  margin-bottom: 0.7em;
+}
+
+img.floatRight {
+  margin: 0.5em 0 0.5em 1.2em;
+  margin: 0.3em;
+  max-width: 100%;
+  border: 1px solid #000;
+}
+figure.floatRight {
+  float: right;
+  background-color: #efefef;
+  border: 1px solid #ccc;
+}
+figure.floatRight figcaption {
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 1em;
+  font-size: 0.8em;
+  color: #444;
+}
+footer span {
+  width: 100%;
+  display: block;
+  text-align: center;
+  color: #ddd;
+}
+label.required::after {
+  content: '*';
+}
+
+ul {
+  list-style: disc;
+}
+
+#socialIcons a, #socialIcons a img {
+  display: block;
+}

@@ -1,0 +1,9 @@
+/* print.css */
+
+body {
+  background-color: #fff;
+}
+
+nav, header, footer {
+display: none;
+}

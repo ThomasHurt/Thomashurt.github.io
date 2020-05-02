@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Contact Thomas Hurt</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha256-gvEnj2axkqIj4wbYhPjbWV7zttgpzBVEgHub9AAZQD4=" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles-main.css">
+  <link rel="stylesheet" href="styles-media.css">
+  <link rel="stylesheet" href="styles-deco.css">
+  <link rel="stylesheet" media="print" href="print.css">
+  <script>
+  function validateForm() {
+  var x = document.forms["contactForm"]["name"].value;
+  if (x == "") {
+    alert("Name must be filled in");
+    return false;
+  }
+}
+  </script>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="./">home</a></li>
+      <li><a href="professional.html">professional</a></li>
+      <li><a href="personal.html">personal</a></li>
+      <li><a href="resume.html">resume</a></li>
+      <li><a href="contact.html">contact</a></li>
+    </ul>
+  </nav>
+  <header>
+    <a href="./"><img src="ThomasHurt.png" alt="about Thomas Hurt"></a>
+  </header>
+  <div id="deco1"></div>
+  <section>
+    <div id="formDiv">
+      <h1>Contact Thomas</h1>
+      <form action="contact.php" method="post" name="contactForm" onsubmit="return validateForm();">
+      <label for="name" class="required">Name:</label>
+      <input name="name" id="name">
+      <label for="email">Email:</label>
+      <input name="email" id="email">
+      <label for="phone">Phone:</label>
+      <input name="phone" id="phone">
+      <label for="email_pref" class="inline">Prefer email contact</label>
+      <input type="radio" name="preference" value="email" id="email_pref">
+      <label for="phone_pref" class="inline">Prefer phone contact</label>
+      <input type="radio" name="preference" value="phone" id="phone_pref">
+      <label for="message">Message:</label>
+      <textarea id="message" name="message"></textarea>
+      <input type="submit" value="Send">
+      </form>
+    </div>
+  </section>
+
+<footer>
+  <span>&copy; Copyright 2020 Thomas Hurt</span>
+  <div id="socialIcons"><a href="#"><img src="images/linkedin.png" alt="linkedIn"></a></div>
+  <div class="clearDiv"></div>
+</footer>
+</body>
+
+</html>
